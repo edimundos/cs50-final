@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Profile
+{% endblock %}
+
+{% block main %}
+    <form action="/logout" method="get">
+        <button class="btn btn-primary" type="submit">Log Out</button>
+    </form>
+    <form action="/myPictures" method="get" style="padding: 10px">
+        <button class="btn btn-primary" type="submit">My pictures</button>
+    </form>
+    <form action="/uploadMe" method="get">
+        <button class="btn btn-primary" type="submit">Upload picture of me</button>
+    </form>
+{% endblock %}

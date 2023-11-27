@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Upload me
+{% endblock %}
+
+{% block main %}
+    <form action="/uploadMe" method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+            Input pictures of yourself 
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" type="file" name="file" accept="image/png, image/jpeg, image/jpg" required>
+        </div>
+        <input class="btn btn-primary" type="submit" value="Submit">
+    </form>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    My pictures
+{% endblock %}
+
+{% block main %}
+    {% for picture in pictures %}
+        <img src="{{ picture.picture }}" alt="My Picture">
+    {% endfor %}
+{% endblock %}
